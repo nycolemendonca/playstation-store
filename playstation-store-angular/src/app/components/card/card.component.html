@@ -2,8 +2,17 @@
   <div class="overflow-hidden rounded-lg shadow-lg ">
     <img
       class="hover:scale-110 ease-in-out duration-500 place-content-stretch"
-      src="{{ cardCover }}" alt="#" style="width: 200px; height: 300px;">
-    <app-card-label cardLabel="Exclusive"></app-card-label>
-    <app-card-pricing cardPricing="R$ 129.99" cardDevice="PS5"></app-card-pricing>
+      [src]=[cardCover]
+      alt="#"
+      style="width: 200px; height: 300px;">
+
+    <app-card-label
+      cardLabel="{{ cardLabel }}"
+    ></app-card-label>
+
+    <app-card-pricing
+      cardPricing="{{ cardPricing }}"
+      cardDevice="{{ cardDevice }}">
+    </app-card-pricing>
   </div>
 </a>
